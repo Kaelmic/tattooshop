@@ -24,7 +24,6 @@ body {
   top: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.88);
-  backdrop-filter: blur(8px);
   border-bottom: 1px solid #1f1f1f;
   z-index: 1000;
 }
@@ -88,8 +87,6 @@ body {
     url("images/bg 1.png") center 60% / contain no-repeat;
 
   opacity: 0.85;
-  transform: translateY(calc(var(--parallax, 0px))) scale(1.05);
-  will-change: transform;
   z-index: -1;
 }
 
@@ -179,9 +176,9 @@ body {
   padding: 25px;
   border-radius: 18px;
   border: 1px solid #262626;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.32);
   text-align: left;
-  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .service-card {
@@ -211,9 +208,9 @@ body {
 .service-card:hover,
 .step:hover,
 .info-grid div:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px);
   border-color: #b91c1c;
-  box-shadow: 0 25px 50px rgba(185, 28, 28, 0.18);
+  box-shadow: 0 18px 38px rgba(185, 28, 28, 0.12);
 }
 
 .service-card h3,
