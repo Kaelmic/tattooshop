@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const submitBtn = form?.querySelector("button");
 
   const startHour = 10;
-  const endHour = 19;
+  const endHour = 18;
   const cutoffHour = 20;
   const closedDays = [0]; // Sunday
-  const slotMinutes = ["00", "15", "30", "45"];
+  const slotMinutes = ["00"];
 
   // Reveal animation
   const revealElements = document.querySelectorAll(".reveal");
@@ -85,8 +85,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function setMinimumDate() {
-    dateInput.min = getMinimumBookingDate();
-  }
+  const minDate = getMinimumBookingDate();
+
+  dateInput.setAttribute("min", minDate);
+  dateInput.min = minDate;
+}
+  setMinimumDate();
 
   function resetTimeSlots(message = "Select time") {
     timeInput.innerHTML = `<option value="">${message}</option>`;
