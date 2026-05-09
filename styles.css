@@ -171,7 +171,7 @@ body {
   gap: 25px;
 }
 
-.service-card,
+,
 .step {
   background: #141414;
   padding: 25px;
@@ -181,7 +181,7 @@ body {
   text-align: left;
 }
 
-.service-card {
+ {
   transition: 0.25s ease;
   position: relative;
   overflow: hidden;
@@ -431,10 +431,12 @@ body {
 }
 
 .service-card:hover,
-  .step:hover,
-  .info-grid div:hover {
-    transform: none;
-  }
+.step:hover,
+.info-grid div:hover {
+  transform: translateY(-8px);
+  border-color: #b91c1c;
+  box-shadow: 0 25px 50px rgba(185, 28, 28, 0.18);
+}
 
   .booking h2,
 .services h2,
