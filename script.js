@@ -34,17 +34,17 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("load", revealOnScroll);
   revealOnScroll();
 
-  // Parallax hero
-  const hero = document.querySelector(".hero");
+  // // Parallax hero
+  // const hero = document.querySelector(".hero");
 
-  if (hero) {
-    window.addEventListener("scroll", () => {
-      const scrollY = window.scrollY;
-      const speed = 0.25;
+  // if (hero) {
+  //   window.addEventListener("scroll", () => {
+  //     const scrollY = window.scrollY;
+  //     const speed = 0.25;
 
-      hero.style.setProperty("--parallax", `${scrollY * speed}px`);
-    });
-  }
+  //     hero.style.setProperty("--parallax", `${scrollY * speed}px`);
+  //   });
+  // }
 
   if (!form || !successMessage || !dateInput || !timeInput) return;
 
