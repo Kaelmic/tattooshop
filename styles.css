@@ -277,8 +277,10 @@ body {
   overflow: hidden;
 }
 
-.booking h2 {
-  margin-bottom: 10px;
+.booking h2,
+.booking > p,
+.booking-brand {
+  text-align: center;
 }
 
 .booking p {
