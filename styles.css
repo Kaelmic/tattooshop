@@ -245,8 +245,8 @@ body {
 .step:hover,
 .info-grid div:hover {
   transform: translateY(-8px);
-  border-color: #b91c1c ;
-  box-shadow: 0 25px 50px rgba(200, 155, 60, 0.12);
+  border-color: #b91c1c;
+  box-shadow: 0 25px 50px rgba(185, 28, 28, 0.18);
 }
 
 /* .popular {
