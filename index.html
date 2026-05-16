@@ -16,69 +16,252 @@
 <body>
   <header class="navbar">
     <div class="nav-container">
-      <a href="#" class="logo">Blackline Tattoo Studio</a>
+      <a href="#" class="logo">
+        <span>BLACKLINE</span>
+        <small>TATTOO STUDIO</small>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#booking">Booking</a>
+        <a href="#visit">Visit</a>
+      </nav>
+
       <a href="#booking" class="nav-btn">Book Now</a>
     </div>
   </header>
 
   <main>
     <section class="hero">
+      <div class="hero-overlay"></div>
+
       <div class="hero-content">
-        <p class="brand">Blackline Tattoo Studio</p>
-        <h1>Book your next tattoo appointment with ease.</h1>
-        <p>
-          Custom tattoos, flash designs, cover-ups, and consultations made simple.
-          Choose your service, preferred date, and time — we’ll contact you to confirm.
+        <p class="eyebrow">Private Tattoo Studio in Malta</p>
+
+        <h1>Ink with meaning. Booked with ease.</h1>
+
+        <p class="hero-text">
+          Custom tattoos, flash designs, cover-ups, and piercing appointments.
+          Submit your request online and we’ll contact you to confirm.
         </p>
-        <a href="#booking" class="btn">Book Appointment</a>
+
+        <div class="hero-actions">
+          <a href="#booking" class="btn primary-btn">Book Appointment</a>
+          <a href="#services" class="btn ghost-btn">View Services</a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <strong>6+</strong>
+            <span>Services</span>
+          </div>
+          <div>
+            <strong>10AM–7PM</strong>
+            <span>Mon–Sat</span>
+          </div>
+          <div>
+            <strong>Malta</strong>
+            <span>Bugibba</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <p>Featured Service</p>
+        <h3>Custom Tattoo</h3>
+        <span>Design consultation included</span>
       </div>
     </section>
 
-    <section class="services reveal" aria-labelledby="services-title">
-      <h2 id="services-title">Our Services</h2>
+    <section id="services" class="services reveal">
+      <div class="section-heading">
+        <p class="eyebrow">What we do</p>
+        <h2>Services built around your idea.</h2>
+      </div>
 
       <div class="services-grid">
         <button type="button" class="service-card" onclick="scrollToBooking('Tattoo Consultation')">
+          <span class="card-number">01</span>
           <h3>Tattoo Consultation</h3>
           <p>Discuss your idea, placement, size, and design direction.</p>
-          <span>Free / By Request</span>
+          <strong>Free / By Request</strong>
         </button>
 
         <button type="button" class="service-card" onclick="scrollToBooking('Small Tattoo')">
+          <span class="card-number">02</span>
           <h3>Small Tattoo</h3>
-          <p>Minimal tattoos, fine-line pieces, symbols, and small designs.</p>
-          <span>From €40</span>
+          <p>Fine-line pieces, symbols, minimal tattoos, and small designs.</p>
+          <strong>From €40</strong>
         </button>
 
         <button type="button" class="service-card popular" onclick="scrollToBooking('Custom Tattoo')">
           <div class="badge">Most Popular</div>
+          <span class="card-number">03</span>
           <h3>Custom Tattoo</h3>
-          <p>Personalized tattoo design created around your idea.</p>
-          <span>Price on Request</span>
+          <p>Personalized tattoo design created around your concept.</p>
+          <strong>Price on Request</strong>
         </button>
 
         <button type="button" class="service-card" onclick="scrollToBooking('Flash Tattoo')">
+          <span class="card-number">04</span>
           <h3>Flash Tattoo</h3>
           <p>Ready-made tattoo designs available from the studio.</p>
-          <span>From €50</span>
+          <strong>From €50</strong>
         </button>
 
         <button type="button" class="service-card" onclick="scrollToBooking('Cover-Up Tattoo')">
+          <span class="card-number">05</span>
           <h3>Cover-Up Tattoo</h3>
           <p>Cover or rework an existing tattoo with a new design.</p>
-          <span>Consultation Required</span>
+          <strong>Consultation Required</strong>
         </button>
 
         <button type="button" class="service-card" onclick="scrollToBooking('Piercing')">
+          <span class="card-number">06</span>
           <h3>Piercing</h3>
           <p>Professional piercing service in a clean studio environment.</p>
-          <span>From €25</span>
+          <strong>From €25</strong>
         </button>
       </div>
     </section>
 
-    <section class="business-info reveal">
-      <h2>Visit Us</h2>
+    <section class="split-section reveal">
+      <div class="split-content">
+        <p class="eyebrow">Simple process</p>
+        <h2>From idea to confirmed appointment.</h2>
+        <p>
+          This form is for appointment requests only. The studio will review your
+          details, estimate the duration, and confirm the final slot with you.
+        </p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <span>01</span>
+          <h3>Submit Request</h3>
+          <p>Choose your service, date, time, and describe your tattoo idea.</p>
+        </div>
+
+        <div class="step">
+          <span>02</span>
+          <h3>Artist Review</h3>
+          <p>We check design details, availability, size, and placement.</p>
+        </div>
+
+        <div class="step">
+          <span>03</span>
+          <h3>Confirmation</h3>
+          <p>We contact you by phone or WhatsApp to confirm everything.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="booking reveal">
+      <div class="booking-left">
+        <p class="eyebrow">Appointment request</p>
+        <h2>Tell us what you want to get inked.</h2>
+        <p>
+          Choose your preferred service, date, and time. Add notes about size,
+          placement, style, or reference ideas.
+        </p>
+
+        <div class="booking-note-box">
+          <strong>Need a faster reply?</strong>
+          <p>Message us directly on WhatsApp after submitting your request.</p>
+          <a href="https://wa.me/35699123456" target="_blank" rel="noopener noreferrer">
+            WhatsApp Studio
+          </a>
+        </div>
+      </div>
+
+      <form action="https://formspree.io/f/myklvygy" method="POST" class="booking-form">
+        <input type="hidden" name="_subject" value="New Booking Request - Blackline Tattoo Studio">
+
+        <div class="form-grid">
+          <label>
+            Full Name
+            <input 
+              type="text" 
+              name="Customer Name" 
+              placeholder="Enter your full name" 
+              pattern="[A-Za-z\s]+" 
+              title="Only letters are allowed"
+              required
+            >
+          </label>
+
+          <label>
+            Phone Number
+            <input 
+              type="tel" 
+              name="Phone Number" 
+              placeholder="+356 9912 3456" 
+              pattern="[\+0-9\s]+" 
+              title="Enter a valid phone number"
+              required
+            >
+          </label>
+        </div>
+
+        <label>
+          Email Address
+          <input type="email" name="Email Address" placeholder="you@example.com">
+        </label>
+
+        <label>
+          Service
+          <select name="Service" id="serviceSelect" required>
+            <option value="">Select Service</option>
+            <option>Tattoo Consultation</option>
+            <option>Small Tattoo</option>
+            <option>Custom Tattoo</option>
+            <option>Flash Tattoo</option>
+            <option>Cover-Up Tattoo</option>
+            <option>Piercing</option>
+          </select>
+        </label>
+
+        <div class="form-grid">
+          <label>
+            Preferred Date
+            <input type="date" name="Preferred Date" id="dateInput" required>
+            <p id="day-display" class="day-display"></p>
+          </label>
+
+          <label>
+            Preferred Time Slot
+            <select name="Preferred Time" id="timeInput" required>
+              <option value="">Select time</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          Tattoo Idea / Notes
+          <textarea 
+            name="Notes" 
+            placeholder="Example: small rose on wrist, black ink only, cover-up request, reference idea, size, placement, etc."
+            rows="5"
+          ></textarea>
+        </label>
+
+        <button type="submit" class="btn primary-btn">Submit Request</button>
+
+        <p class="note">
+          *This is a booking request. Final time and duration will be confirmed by the studio.
+        </p>
+      </form>
+
+      <p id="success-message" class="success-message" style="display:none;">
+        ✅ Booking request sent! We’ll contact you shortly.
+      </p>
+    </section>
+
+    <section id="visit" class="business-info reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Studio details</p>
+        <h2>Visit Blackline Tattoo Studio.</h2>
+      </div>
 
       <div class="info-grid">
         <div>
@@ -97,123 +280,6 @@
           <p>Phone / WhatsApp: +356 9912 3456</p>
         </div>
       </div>
-    </section>
-
-    <section class="how-it-works reveal">
-      <h2>How It Works</h2>
-
-      <div class="steps">
-        <div class="step">
-          <h3>1. Submit Request</h3>
-          <p>Choose your tattoo service, preferred date, and time.</p>
-        </div>
-
-        <div class="step">
-          <h3>2. We Review Your Idea</h3>
-          <p>Our artist checks your request, design details, and availability.</p>
-        </div>
-
-        <div class="step">
-          <h3>3. We Confirm</h3>
-          <p>We contact you by phone or WhatsApp to confirm your appointment.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="booking" class="booking reveal">
-      <h2>Request an Appointment</h2>
-      <p>
-        Choose your preferred service, date, and time.
-        Our team will review your request and contact you to confirm your booking.
-      </p>
-
-      <h3 class="booking-brand">Blackline Tattoo Studio</h3>
-
-      <form action="https://formspree.io/f/myklvygy" method="POST" class="booking-form">
-        <input type="hidden" name="_subject" value="New Booking Request - Blackline Tattoo Studio">
-
-        <label>
-          Full Name
-          <input 
-            type="text" 
-            name="Customer Name" 
-            placeholder="Enter your full name" 
-            pattern="[A-Za-z\s]+" 
-            title="Only letters are allowed"
-            required
-          >
-        </label>
-
-        <label>
-          Phone Number
-          <input 
-            type="tel" 
-            name="Phone Number" 
-            placeholder="+356 9912 3456" 
-            pattern="[\+0-9\s]+" 
-            title="Enter a valid phone number"
-            required
-          >
-        </label>
-
-        <label>
-          Email Address
-          <input 
-            type="email" 
-            name="Email Address" 
-            placeholder="you@example.com"
-          >
-        </label>
-
-        <label>
-          Service
-          <select name="Service" id="serviceSelect" required>
-            <option value="">Select Service</option>
-            <option>Tattoo Consultation</option>
-            <option>Small Tattoo</option>
-            <option>Custom Tattoo</option>
-            <option>Flash Tattoo</option>
-            <option>Cover-Up Tattoo</option>
-            <option>Piercing</option>
-          </select>
-        </label>
-
-        <label>
-          Preferred Date
-          <input type="date" name="Preferred Date" id="dateInput" required>
-          <p id="day-display" class="day-display"></p>
-        </label>
-
-        <label>
-          Preferred Time Slot
-          <select name="Preferred Time" id="timeInput" required>
-            <option value="">Select time</option>
-          </select>
-        </label>
-
-        <label>
-          Tattoo Idea / Notes
-          <textarea 
-            name="Notes" 
-            placeholder="Example: small rose on wrist, black ink only, cover-up request, reference idea, size, placement, etc."
-            rows="4"
-          ></textarea>
-        </label>
-
-        <button type="submit" class="btn">Submit Request</button>
-
-        <p class="note">
-          *This is a booking request. Final time and duration will be confirmed by the studio.
-        </p>
-      </form>
-
-      <p id="success-message" class="success-message" style="display:none;">
-        ✅ Booking request sent! We’ll contact you shortly.
-      </p>
-
-      <a href="https://wa.me/35699123456" class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
-        Message us on WhatsApp
-      </a>
     </section>
   </main>
 
